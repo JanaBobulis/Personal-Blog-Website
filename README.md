@@ -1,4 +1,4 @@
-### About
+# About
 Personal cooking blog website built using HTML and CSS. 
 It is a mobile friendly page and is displayed on all display sized (mobile, tablet, desktop). To achieve dynamic page I used flexbox and grid. 
 Every blog post located on the homepage has a link to a seperate post once clicked.
