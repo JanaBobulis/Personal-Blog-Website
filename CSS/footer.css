@@ -1,0 +1,94 @@
+footer {
+    grid-area: ft; 
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "top top top top top top top top"
+    "bottom bottom bottom bottom bottom bottom bottom bottom";
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid#a3a3a2;
+}
+
+.testimonial {
+    display: flex; 
+    flex-direction: row;
+    grid-column: 1 / 8;
+    grid-area: top;
+}
+
+.feedback {
+    display: block;
+    height: auto;
+    padding: 20px;
+}
+
+.testimonial .tag {
+    font-size: 12px;
+    float: right;
+    margin-right: 17px;
+}
+
+q {
+    line-height: 1.2rem;
+    padding-left: 2px;
+    word-spacing: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: #000;
+}
+
+q::before {
+    font-size: 55px;
+    content: '"';
+    font-family: 'Passion One', cursive;
+}
+
+q::after {
+    display: none;
+}
+
+.connect {
+    grid-area: bottom;
+    margin-top: 20px;
+}
+
+.connect i {
+    font-size: 25px;
+    margin-top: 15px;
+}
+h5 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-linkedin {
+    color: #0e76a8;
+}
+
+.fa-facebook-f{
+    color: #4267B2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+.content-of-article {
+    grid-column: 1 / 3;
+    margin: 10px;
+}
+
+.recipe-article {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "top top"
+    "img method"
+    "bottom bottom";
+}
+
+.page-top {
+    grid-area: top;
+}
+
+.page-photo {
+    grid-area: img;
+}
+
+figcaption {
+    font-size: 11px;
+    margin-top: 3px;
+    font-style: italic;
+    color: #636362;
+}
+
+.ingr {
+    grid-area: method;
+    padding-left: 0 0 20px 40px;
+    margin: 5px;
+}
+
+li {
+    line-height: 1.2rem;
+    font-size: 14px;
+}
+
+.ingr,
+.page-photo,
+.method,
+.page-top {
+    margin: 15px 0 15px 0;
+}
+
+.method {
+    grid-area: bottom;
+}
+
+h6 {
+    padding-left: 35px;
+    margin: 15px 0 15px 0;
+}
+
+h6, 
+h7 {
+    word-spacing: 2px;
+    color: #000;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.3rem;
+}
+
+
+
+
+

@@ -1,0 +1,73 @@
+@media(max-width: 600px){
+    div .content-info{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    ul .menu-items {
+        display: flex; 
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }
+    div .header-photo{
+        text-align: center;
+        line-height: 3.5rem;
+    }
+
+    .testimonial {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+} 
+ 
+@media(min-width: 950px){
+    div .info-boxes {
+        display: grid; 
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "box box box box box box about about"
+        "box box box box box box nvs nvs"
+        "box box box box box box . .";
+    }
+
+    div .blog-info {
+        display: grid; 
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "box box box box box box about about"
+        "box box box box box box about about"
+        "box box box box box box box nvs nvs";
+    }
+
+    div .content-of-article {
+        grid-column: 1 / 7;
+        grid-area: box;
+    }
+
+    div .content-info {
+        grid-column: 1 / 7;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    nav .menu-items {
+        grid-column: 6 / 9;
+    }
+
+    div .about-me{
+        border-bottom: none;
+        padding-top: 25px;
+    }
+
+    div input[type=submit] {
+        margin-top: 15px;
+    }
+
+    .content-of-article{
+        grid-column: 1 / 7;
+    }
+}

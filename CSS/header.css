@@ -1,0 +1,69 @@
+header {
+    grid-area: hd;
+}
+
+.header-nav {
+    display: grid; 
+    margin: 10px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 60px 240px;
+    grid-template-areas: 
+    '. nav nav nav nav nav nav .'
+    "h-photo h-photo h-photo h-photo h-photo h-photo h-photo h-photo";
+}
+
+.menu-items {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size:14px;
+    padding: 8px;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+
+a:hover {
+    color: lightslategray;
+    transition: all 0.3s ease-out;
+}
+
+.header-photo {
+    grid-area: h-photo;
+    position: relative;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* OPACITY*/
+.header-photo:before {
+    content: "";
+    background-image: url("/photos/pexels-kaboompics-com-5876.jpg"); 
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+    margin: 10px;
+}
+
+.header-photo h1 {
+    position: relative;
+    font-family: 'Mr De Haviland', cursive;
+    font-size: 55px;
+}
+
+
+h1 {
+    position: relative;
+    font-family: 'Mr De Haviland', cursive;
+    font-size: 55px;
+}
